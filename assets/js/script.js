@@ -2,6 +2,8 @@ $('.role').click(function(){
     $(this).addClass('active');
     $(this).parent().next().removeClass('disabled');
 
+
+
     if($(":selected", this)){
         console.log($(this).attr('id'))
     }

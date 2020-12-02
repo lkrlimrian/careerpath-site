@@ -1,5 +1,5 @@
 .main-container{
-    background-image: url('assets/img/bg.png');
+    background-image: url('../img/bg.png');
     width: 100%;
     height: 100vh;
     display: flex;
@@ -40,6 +40,16 @@ button.reset{
     text-align: center;
     font-family: sans-serif;
     font-size: 12pt;
+    position: relative;
+}
+
+.role:hover img{
+    filter: drop-shadow(0 0 5px #FFAD02);
+}
+
+.role:hover .tooltip{
+    opacity: 1;
+    z-index: 999;
 }
 
 
@@ -62,4 +72,79 @@ button.reset{
 
 [role="radio"]{
     cursor: pointer;
+}
+
+.tooltip{
+    position: absolute;
+    width: 200px;
+    text-align: left;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
+    z-index: 99999;
+}
+
+.arrow,
+.arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  z-index: -1;
+}
+
+.arrow::before {
+  content: '';
+  transform: rotate(45deg);
+  background: #fff;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.2));
+}
+
+.tooltip .title{
+    color: #223367;
+    font-weight: 700;
+    font-size: 12pt;
+    margin: 0 0 10px;
+}
+
+.tooltip .duration{
+    font-size: 10pt;
+    margin: 3px 0;
+}
+
+.tooltip .description{
+    font-size: 12pt;
+    margin: 0;
+}
+
+.tooltip.ttright{
+    opacity: 0;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    z-index: -9999;
+}
+
+.tooltip.ttleft{
+    opacity: 0;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    z-index: -9999;
+}
+
+.tooltip.tttop{
+    opacity: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: -9999;
+}
+
+.tooltip.ttbottom{
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -9999;
 }
