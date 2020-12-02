@@ -1,5 +1,7 @@
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
@@ -8,16 +10,24 @@
                 <!-- START -->
                 <div class="level-group level-0">
 
-                    <div class="img-container">
-                        <img src="assets/img/person.png" alt="drawing of you">
+                    <div class="start-point">
+                        <div class="img-container">
+                            <img src="assets/img/person.png" alt="drawing of you">
+                        </div>
+    
+                        <button class="reset">Start Over</button>
+    
+                        <div class="tooltip tttop ttstart" role="tooltip">
+                            <h5 class="title">Start Here!</h5>
+                            <p>Select your desired career path  </p>
+                            <div class="arrow" data-popper-arrow></div>
+                        </div>
                     </div>
-
-                    <button class="reset">Start Over</button>
 
                 </div>
                 <!-- LEVEL 1 -->
                 <div class="level-group level-1" role="radiogroup">
-                    <div class="role" role="radio" id="csr">
+                    <div class="role" role="radio" aria-hidden="true" aria-checked id="csr">
                         <div class="img-container">
                             <img src="assets/img/csr.png">
                         </div>
@@ -29,7 +39,7 @@
                             <div class="arrow" data-popper-arrow></div>
                         </div>
                     </div>
-                    <div class="role" role="radio" id="tsr">
+                    <div class="role" role="radio" aria-hidden="true" aria-checked id="tsr">
                         <div class="img-container">
                             <img src="assets/img/tsr.png" >
                         </div>
@@ -44,7 +54,7 @@
                 </div>
                 <!-- LEVEL 2 -->
                 <div class="level-group level-2 disabled" role="radiogroup">
-                    <div class="role" role="radio" id="sme">
+                    <div class="role" role="radio" aria-hidden="true" aria-checked id="sme">
                         <div class="img-container">
                             <img src="assets/img/sme.png" >
                         </div>
@@ -59,7 +69,7 @@
                 </div>
                 <!-- LEVEL 3 -->
                 <div class="level-group level-3 disabled" role="radiogroup">
-                    <div class="role" role="radio" id="tl">
+                    <div class="role" role="radio" aria-hidden="true" aria-checked id="tl">
                         <div class="img-container">
                             <img src="assets/img/tl.png" >
                         </div>
@@ -71,7 +81,7 @@
                             <div class="arrow" data-popper-arrow></div>
                         </div>
                     </div>
-                    <div class="role" role="radio" id="qas">
+                    <div class="role" role="radio" aria-hidden="true" aria-checked id="qas">
                         <div class="img-container">
                             <img src="assets/img/qas.png" >
                         </div>
@@ -86,7 +96,7 @@
                 </div>
                 <!-- LEVEL 4 -->
                 <div class="level-group level-4 disabled" role="radiogroup">
-                    <div class="role" role="radio" id="om">
+                    <div class="role" role="radio" aria-hidden="true" aria-checked id="om">
                         <div class="img-container">
                             <img src="assets/img/om.png" >
                         </div>
@@ -98,7 +108,7 @@
                             <div class="arrow" data-popper-arrow></div>
                         </div>
                     </div>
-                    <div class="role" role="radio" id="qasup">
+                    <div class="role" role="radio" aria-hidden="true" aria-checked id="qasup">
                         <div class="img-container">
                             <img src="assets/img/qasup.png" >
                         </div>
@@ -113,7 +123,7 @@
                 </div>
                  <!-- LEVEL 5 -->
                  <div class="level-group level-5 disabled" role="radiogroup">
-                    <div class="role" role="radio" id="od">
+                    <div class="role" role="radio" aria-hidden="true" aria-checked id="od">
                         <div class="img-container">
                             <img src="assets/img/od.png" >
                         </div>
@@ -125,13 +135,13 @@
                             <div class="arrow" data-popper-arrow></div>
                         </div>
                     </div>
-                    <div class="role" role="radio" id="qam">
+                    <div class="role" role="radio" aria-hidden="true" aria-checked id="qam">
                         <div class="img-container">
                             <img src="assets/img/qam.png" >
                         </div>
                         <h4>Quality Assurance Manager</h4>
                         <div class="tooltip ttbottom" role="tooltip">
-                            <h5 class="title">uality Assurance Manager</h5>
+                            <h5 class="title">Quality Assurance Manager</h5>
                             <h6 class="duration">2 - 3 years</h6>
                             <p class="description">Develops Quality Assurance requirements and ensures a standard process to improve overall customer experience.</p>
                             <div class="arrow" data-popper-arrow></div>
