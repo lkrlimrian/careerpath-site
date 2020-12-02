@@ -1,0 +1,56 @@
+[
+ {
+   "id": "csr",
+   "role": "Customer Service Representative",
+   "duration": "6 mos - 1 year",
+   "description": "Loves taking customer calls and provides customer needs in a timely, friendly, and accurate manner"
+ },
+ {
+   "id": "tsr",
+   "role": "Technical Support Representative",
+   "duration": "6 mos - 1 year",
+   "description": "Provides timely and effective resolutions to technical issues encountered by a customer"
+ },
+ {
+   "id": "sme",
+   "role": "Subject Matter Expert",
+   "duration": "1 - 3 years",
+   "description": "Prompt in providing floor support and assistance to agents in the most efficient way"
+ },
+ {
+   "id": "tl",
+   "role": "Team Leader",
+   "duration": "2 - 3 years",
+   "description": "Collaborates well with a group of agents and provides motivation and support in achieving targets."
+ },
+ {
+   "id": "qas",
+   "role": "Quality Assurance Specialist",
+   "duration": "2 - 3  years",
+   "description": "Keen in reviewing phone interactions and identifies areas for improvement to ensure quality customer experience"
+ },
+ {
+   "id": "om",
+   "role": "Operations Manager",
+   "duration": "2 - 3  years",
+   "description": "Keen in supervising people and accounts and in ensuring that products and services cater to customer needs."
+ },
+ {
+   "id": "qasup",
+   "role": "Quality Assurance Supervisor",
+   "duration": "2 - 3  years",
+   "description": "Keen in reviewing phone interactions and identifies areas for improvement to ensure quality customer experience"
+ },
+ {
+   "id": "od",
+   "role": "Operations Director",
+   "duration": "2 - 3  years",
+   "description": "Passionate in delivering a smooth and efficient operations and strategizing overall organizational improvement"
+ },
+ {
+   "id": "qam",
+   "role": "Quality Assurance Manager",
+   "duration": "2 - 3  years",
+   "description": "Develops Quality Assurance requirements and ensures a standard process to improve overall customer experience"
+ }
+]
