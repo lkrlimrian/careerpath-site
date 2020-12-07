@@ -41,6 +41,10 @@ $('.reset').click(function(){
         'opacity': '1 !important',
         'z-index': 9999
     })
+
+    $('.role-title').text("Select your desired career path")
+    $('.role-duration').text('')
+    $('.role-description').text('')
     
     // RESET IMAGES
     $('.role').each(function(){

@@ -5,12 +5,16 @@
 .main-container{
     position: relative;
     overflow: scroll;
+    padding: 50px 0 200px;
+    height: unset;
+    min-height: 100vh;
+    width: unset;
 }
 
 .roadmap{
     transform: rotate(90deg);
-    padding-right: 300px;
     width: unset;
+    position: relative;
 }
 
 .tooltip{
