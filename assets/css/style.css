@@ -51,6 +51,20 @@ button.reset{
     max-height: 200px;
 }
 
+.role:after{
+    content: " ";
+    position: absolute;
+    z-index: 0;
+    width: 90px;
+    height: 90px;
+    border-radius: 9999px;
+    background: #fff;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
 .role, .start-point{
     max-width: 200px;
     width: 200px;
@@ -197,6 +211,7 @@ button.reset{
     width: 150px !important;
     opacity: 1 !important;
     z-index: 9999;
+    bottom: 100%;
 }
 
 /* PATHS */

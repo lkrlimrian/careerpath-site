@@ -60,6 +60,10 @@
     box-shadow: 0 0 12px rgba(0,0,0,0.3);
 }
 
+.role:after{
+    display: none;
+}
+
 .role h4,
 .role .img-container{
     transform: rotate(-90deg);
