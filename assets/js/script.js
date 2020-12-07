@@ -1,4 +1,9 @@
 var imgpath = 'assets/img/';
+var cont = [];
+$.get('content.json', function(data){
+    cont.push(data);
+});
+
 
 $('.opspath').click(function(){
     $('.qapath').each(function(){
@@ -18,12 +23,12 @@ $('.qapath').click(function(){
 
 $('#csr').click(function(){
     $('#tsr').removeClass('active');
-    $('#tsr').find('.role-img').attr('src', imgpath + $(this).attr('id') + '.png');
+    $('#tsr').find('.role-img').attr('src', imgpath + 'tsr.png');
 })
 
 $('#tsr').click(function(){
     $('#csr').removeClass('active');
-    $('#csr').find('.role-img').attr('src', imgpath + $(this).attr('id') + '.png');
+    $('#csr').find('.role-img').attr('src', imgpath + 'csr.png');
 })
 
 $('.reset').click(function(){
@@ -59,6 +64,8 @@ $('.level-group').click(function(){
 });
 
 $('.role').on('click', function(){
+    var thisid = $(this).attr('id');
+
     $(this).addClass('active');
     $(this).parent().next().removeClass('disabled');
 
@@ -71,13 +78,22 @@ $('.role').on('click', function(){
     }
 
     if($(":selected", this)){
-        console.log($(this).attr('id'))
-        $(this).find('.role-img').attr('src', imgpath + $(this).attr('id') + '1.png');
+        $(this).find('.role-img').attr('src', imgpath + thisid + '1.png');
     }
     else{
-        $(this).find('.role-img').attr('src', imgpath + $(this).attr('id') + '.png');
+        $(this).find('.role-img').attr('src', imgpath + thisid + '.png');
     }
 
     $(this).parent('.level-group').find('.active').removeClass('active');
     $(this).addClass('active');
+
+    $.each(cont[0], function(key, val){
+        if(val.id == thisid){
+            $('.role-title').text(val.role);
+            $('.role-duration').text(val.duration)
+            $('.role-description').text(val.description)
+        }
+    })
+
+
 });

@@ -1,0 +1,82 @@
+:root{
+    font-size: 18px !important;
+}
+
+.main-container{
+    position: relative;
+    overflow: scroll;
+}
+
+.roadmap{
+    transform: rotate(90deg);
+    padding-right: 300px;
+    width: unset;
+}
+
+.tooltip{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    opacity: 1;
+    display: none !important;
+}
+
+.start-point{
+    transform: rotate(-90deg);
+}
+
+.role-info{
+    display: block;
+    width: 90%;
+    position: fixed;
+    padding: 15px 30px;
+    bottom: 0px;
+    z-index: 999;
+    background: #fff;
+    border-radius: 15px 15px 0 0;
+    color: #000;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+
+.role-info .role-title{
+    color: #223367;
+    font-size: 24px;
+}
+
+.role{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+    max-width: unset;
+    width: 200px;
+    max-width: 200px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+
+.role h4,
+.role .img-container{
+    transform: rotate(-90deg);
+    margin: 0;
+}
+
+.role .img-container{
+    width: unset;
+    /* height: 150px; */
+    align-items: center;
+    justify-content: center;
+    height: unset;
+    flex-grow: 2;
+}
+
+.role h4{
+    flex-grow: 1;
+    /* display: none; */
+}
+
+.path-container{
+    z-index: -1;
+}
+
