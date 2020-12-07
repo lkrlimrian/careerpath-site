@@ -29,6 +29,12 @@
     transform: rotate(-90deg);
 }
 
+.start-point h4{
+    font-size: 1.2rem;
+    color: #223367;
+    text-align: center;
+}
+
 .role-info{
     display: block;
     width: 90%;
@@ -49,6 +55,7 @@
 
 .role{
     display: flex;
+    flex-flow: row;
     align-items: center;
     justify-content: center;
     flex: auto;

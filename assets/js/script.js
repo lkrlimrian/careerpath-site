@@ -42,7 +42,7 @@ $('.reset').click(function(){
         'z-index': 9999
     })
 
-    $('.role-title').text("Select your desired career path")
+    $('.role-title, .start-point h4').text("Select your desired career path")
     $('.role-duration').text('')
     $('.role-description').text('')
     
@@ -99,5 +99,6 @@ $('.role').on('click', function(){
         }
     })
 
+    $('.start-point h4').text('')
 
 });
